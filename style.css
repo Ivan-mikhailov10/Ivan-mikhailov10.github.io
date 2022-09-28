@@ -1,25 +1,49 @@
 .red{
-	background-color: red;
+	background-color: RoyalBlue;
 }
 .green{
-	background-color: green;
+	background-color: RoyalBlue;
 }
 .blue{
-	background-color: blue;
+	background-color:SlateBlue ;
 }
 body{
 	margin: 0;
 	padding: 0;
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
 }
 
 .conteiner{
-	background-color: goldenrod;
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,103,121,1) 50%, rgba(0,212,255,1) 100%); 
 	display: flex;
 	flex-direction: row;
+	max-width: 1200px;
+	margin: auto;
 }
 
 
 div{
 	display: inline-block;
 	width: 33wv;
+}
+.my{
+	width: 400px;
+	height: 100px;
+
+	margin: 25px;
+	padding: 50px;
+}
+.hero{
+	height: 100vh;
+	background-image:url("cat.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 7vh;
+
+
 }
