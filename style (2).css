@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+}
+div{
+    display: inline-block;
+    width: 33wv;
+}
+.button{
+    color: black;
+    background-color: #feca30;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 30px 120px 30px 30px;
+    font-family: Verdana;
+
+}
