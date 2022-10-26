@@ -1,1 +1,17 @@
-font-family: 'Inter', sans-serif;
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+}
+
+.frame {
+    max-width: 1440px;
+}
+
+.hero {
+    height: 600px;
+    background-image: url("img/никольский.jpg");
+    background-size: cover;
+}
