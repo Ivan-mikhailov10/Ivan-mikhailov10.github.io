@@ -13,49 +13,87 @@ body{
     background-image: url("img/header_bg.jpg");
     background-size: cover;
 }
+
 .img_container{
- display: flex;
+    display: flex;
 }
+
 .img_item{
     flex-grow: 1;
     flex-basis: 0;
     height: 475px;
 }
+
 .img1{
-     background-image: url("img/img1.jpg");
+    background-image: url("img/img1.jpg");
     background-size: cover;
 }
 .img2{
-     background-image: url("img/img2.jpg");
+    background-image: url("img/img2.jpg");
     background-size: cover;
 }
+
 .img3{
-     background-image: url("img/img3.jpg");
+    background-image: url("img/img3.jpg");
     background-size: cover;
 }
+
 .text_container{
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: normal;
     font-weight: 400;
     margin: 50px 0 190px;
 }
+
 .text_container h1{
     font-size: 64px;
 }
+
 .text_container p {
     font-size: 36px;
 }
+
 .second_had {
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: normal;
     font-weight: 400;
     margin: 50px 0 46px;
 }
+
 .second_had h1 {
     font-size: 64px;
 }
+
 .photo_item{
     height: 820px;
     background-image: url("img/luzjetskii.jpg");
+    background-size: cover;
+}
+
+.text_cont{
+    font-family: 'Inter';
+    font-size: normal;
+    font-weight: 400;
+    margin: 50px 0 46px;
+}
+
+.text_cont p{
+    font-size: 36px;
+}
+
+.container{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container p{
+    font-size: 64px;
+
+}
+
+.contact_photo{
+    height: 1510px;
+    background-image: url("img/map.jpg");
     background-size: cover;
 }
