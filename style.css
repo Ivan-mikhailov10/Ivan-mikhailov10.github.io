@@ -1,20 +1,33 @@
-Body{
+Body {
 	margin: 0;
 }
 
-.frame{
-	max-width: 1440px;
-  margin: 0 auto;
-}
-h1{
-	  font-family: 'Inter';
-    font-size: normal;
-    font-weight: 400;
-    margin: 50px 0 190px;
+.frame {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.img1{
-		height: 750px;
-    background-image: url("img/ ddt_first.jpg");
-    background-size: cover;
+header {
+   display: flex;
+   flex-direction: column;
+   height: 800px;
+   justify-content: center;
+   background-image: url("img/main.jpg");
+   background-size: cover;
+}
+
+h1 {
+    font-family: Lobster;
+    font-weight: 400;
+    font-size: 180px;
+    text-align: center;
+    color: white;
+}
+
+button {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 47px 612px;
+    background-color: darkred;
+    border-radius: 5px;
 }
