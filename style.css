@@ -1,33 +1,14 @@
 Body {
 	margin: 0;
+    background-color: black;
 }
 
 .frame {
-    max-width: 1440px;
+    max-width: 2180px;
     margin: 0 auto;
 }
 
-header {
-   display: flex;
-   flex-direction: column;
-   height: 800px;
-   justify-content: center;
-   background-image: url("img/main.jpg");
-   background-size: cover;
+.header{
+    height: 700px;
 }
 
-h1 {
-    font-family: Lobster;
-    font-weight: 400;
-    font-size: 180px;
-    text-align: center;
-    color: white;
-}
-
-button {
-    display: inline-block;
-    padding: 8px 12px;
-    margin: 47px 612px;
-    background-color: darkred;
-    border-radius: 5px;
-}
