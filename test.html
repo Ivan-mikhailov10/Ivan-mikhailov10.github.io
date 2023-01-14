@@ -7,36 +7,24 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-	<title>экскурсии можайск</title>
+	<title>формы</title>
 </head>
-
 <body>
-	<div class="frame">
-		<div class="hero"></div>
-		<div class="img_container">
-			<div class="img_item img1"></div>
-			<div class="img_item img2"></div>
-			<div class="img_item img3"></div>
-		</div>
-		<div class="text_container">
-			<h1>Храмы</h1>
-			<p>Экскурсия по достопримечательностям:<br> Никольский собор, Лужецкий монастырь</p>
-			<p>Ново-Нико́льский собор — храм Одинцовской епархии Русской православной церкви, расположенный в городе Можайске Московской области на территории бывшего Можайского кремля. </p>
-			<p>Высокое здание построенное в 1802—1814 гг. в псевдоготическом стиле (русская готика), поставленное на высоком кремлёвском холме, видно издалека на подъездах к городу с западной стороны по Старой Смоленской дороге (ныне — Бородинская улица).</p>
-		</div>
-		<div class="second_had">
-<h1><center>Лужецкий монастырь</center></h1>
-		</div>
-			<div class="photo_item luzjetskii"></div>
-		<div class="text_cont">
-			<p>Можа́йский Луже́цкий Рождества́ Богоро́дицы Ферапо́нтов монасты́рь — мужской монастырь Одинцовской епархии, расположенный в городе Можайске,
-				<br> существует с XV века. Единственный (кроме храмового комплекса на месте бывшего Якиманского монастыря) из 18 средневековых монастырей Можайска, сохранившийся до наших дней.
-			</p>
-		</div>
-		<div class="container"><p>ПОСМОТРЕТЬ НА ЭТИ И НЕ ТОЛЬКО ДОСТОПРИМЕЧАТЕЛЬНОСТИ МОЖНО ПО АДРЕСУ г. Можайск ул. Мира д.8
-        контакный номер: 8-800-888-88-88</p></div>
-        <div class="contact_photo map"></div>
-    </div>
+	<title>формы</title>
+ </head>
+ <body>
+	<form action="http://192.168.9.20:8000">
+		<label for="name" >имя:</label>
+		<input type="text" name="имя" id="name" placeholder="имя" required>
+		<label for="last-name">фамилия:</label>
+		<input type="text" name="фамилия" id="last-name" placeholder="фамилия" required>
+		<label for="password">пароль:</label>
+		<input type="password" name="пароль" id="password" placeholder="пароль" required>
+		<label for="email">почта:</label>
+		<input type="email" name="пароль" id="email" placeholder="почта">
+		<input type="submit" value="зарегистрироваться">
+		<input type="reset" value="очистить форму">
+	</form>	
 </body>
 
 </html>
