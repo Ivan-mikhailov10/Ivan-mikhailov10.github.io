@@ -13,17 +13,53 @@
 	<title>формы</title>
  </head>
  <body>
-	<form action="http://192.168.9.20:8000">
+	<form action="http://192.168.9.20:8000" method="get">
+		<p>
 		<label for="name" >имя:</label>
 		<input type="text" name="имя" id="name" placeholder="имя" required>
+		</p>
+		<p>
 		<label for="last-name">фамилия:</label>
 		<input type="text" name="фамилия" id="last-name" placeholder="фамилия" required>
+		</p>
+		<p>
 		<label for="password">пароль:</label>
 		<input type="password" name="пароль" id="password" placeholder="пароль" required>
+		</p>
+		<p>
 		<label for="email">почта:</label>
 		<input type="email" name="пароль" id="email" placeholder="почта">
+		</p>
+		<p>
 		<input type="submit" value="зарегистрироваться">
-		<input type="reset" value="очистить форму">
+		</p>
+		<input type="submit" value="очистить">
+		<p>
+			<label for="ticket"> обратный билет</label>
+			<input type="checkbox" name="" id="ticket" value="обратный билет" checked>
+			<label for="window"> место у окна</label>
+			<input type="checkbox" name="" id="window" value="место у окна">
+		</p>
+		<p>
+		<label for="class1"> эконом-класс</label>
+		<input type="radio" name="class" id="class1" value="эконом-класс"checked>
+		<label for="class2"> бизнес-класс</label>
+		<input type="radio" name="class" id="class2" value="бизнес-класс">
+		</p>
+		<p>
+		<label for="story">Расскажите о себе</label>
+	    <textarea id="story" name="story" rows="5" cols="33">Frontend-разработчик со стажем</textarea>
+		</p>
+		<p>
+			<label for="city-select">Ваш город</label>
+  				<select name="city" id="city-select">
+    			<option value="">-- Выберите город --</option>
+    			<option value="petersburg">Санкт-Петербург</option>
+    			<option value="samara">Самара</option>
+    			<option value="perm">Пермь</option>
+    			<option value="novosibirsk">Новосибирск</option>
+  			</select>
+  		</p>
 	</form>	
 </body>
 
