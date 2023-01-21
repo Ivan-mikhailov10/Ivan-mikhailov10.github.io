@@ -1,12 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-
   font-size: 14px;
   line-height: 20px;
   font-family: Verdana, sans-serif;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -38,7 +36,6 @@ body {
   min-height: 400px;
   padding-top: 50px;
   padding-bottom: 180px;
-
   background-image: url("../img/moon-rocket.png");
   background-repeat: no-repeat;
   background-position: 520px 130px;
@@ -115,13 +112,13 @@ body {
 }
 
 .contacts-menu .icon-mail {
-  background-image: url(../img/mail-icon.png);
+  background-image: url(../img/mail-icon 1.png);
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
 
 .contacts-menu .icon-phone {
-  background-image: url(../img/phone-icon.png);
+  background-image: url(../img/phone-icon 1.png);
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
@@ -135,7 +132,6 @@ body {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-
   font-size: 45px;
   line-height: 50px;
   font-family: "Courier New", monospace;
@@ -262,20 +258,20 @@ body {
   height: 68px;
 }
 
-.feature-made-in-russia::after {
-  background-image: url(../img/advantage-icon-1.png);
+.feature-made-in-russia:after {
+  background-image: url(../img/advantage-icon-1 1.png);
 }
 
-.feature-food::after {
-  background-image: url(../img/advantage-icon-2.png);
+.feature-food:after {
+  background-image: url(../img/advantage-icon-2 1.png);
 }
 
-.feature-pilots::after {
-  background-image: url(../img/advantage-icon-3.png);
+.feature-pilots:after {
+  background-image: url(../img/advantage-icon-3 1.png);
 }
 
-.feature-moon-rover::after {
-  background-image: url(../img/advantage-icon-4.png);
+.feature-moon-rover:after {
+  background-image: url(../img/advantage-icon-4 1.png);
 }
 
 .columns-container {
@@ -314,7 +310,6 @@ body {
 .recommendations h3 {
   margin-top: 0;
   margin-bottom: 35px;
-  
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -325,7 +320,6 @@ body {
   margin: 0;
   padding: 0;
   padding-left: 30px;
-
   list-style: none;
 }
 
@@ -387,11 +381,11 @@ body {
 }
 
 .vacation-request-form input[type="text"],
+.vacation-request-form input[type="number"],
 .vacation-request-form input[type="tel"] {
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
-
   border: 0;
 }
 
@@ -413,7 +407,6 @@ body {
   justify-content: flex-start;
   margin-bottom: 55px;
 }
-
 .timetable-info h2 {
   width: 180px;
   margin-top: 15px;
