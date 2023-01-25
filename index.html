@@ -6,7 +6,6 @@
   <link rel="stylesheet" type="text/css" href="style.css" >
   <title>space-z</title>
 </head>
-<body>
     <body>
     <header class="site-header">
         <div class="container">
@@ -40,7 +39,9 @@
                     Космически крутой туризм.<br>
                     Пакетные и индивидуальные туры по лучшим планетам галактики.
                 </p>
-                <a href="#" class="btn btn-yellow">Подбор тура</a>
+                <button class="btn btn-yellow">
+                    <span class="btn-text">Подбор тура</span>
+                </button>
             </section>
         </div>
     </header>
@@ -103,7 +104,7 @@
                     <p>Отправьте заявку, заполнив форму справа, мы рассмотрим вашу кандидатуру и свяжемся с вами в течение 24 часов.</p>
                 </div>
                 <div class="right-column">
-                    <form class="vacation-request-form" method="post" action="mailto:katealf@htmlacademy.ru">
+                    <form class="vacation-request-form" method="get" action="https://httpbin.org/get">
                         <p>
                           <label for="name" class="visually-hidden">ФИО</label>
                           <input id="name" name="name" type="text" placeholder="ФИО">
@@ -206,7 +207,5 @@
 
 
 
-</body>
-  
 </body>
 </html>
