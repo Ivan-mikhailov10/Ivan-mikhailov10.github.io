@@ -13,41 +13,83 @@
 	<title>формы</title>
  </head>
  <body>
-	<form action="http://192.168.9.20:8000" method="get">
+	<form action="http://httpbin.org/get" method="get">
 		Ваш пол:
 		<label for="class1"> мужской</label>
 		<input type="radio" name="class" id="class1" value="мужской"checked>
 		
 				<label for="class2"> женский</label>
 		<input type="radio" name="class" id="class2" value="женский"checked>
-		<input type="submit" value="зарегистрироваться">
+		
 		</p>
 			<p>
-				<label for="city-select">месяц и год рождения</label><br>
-  				<select name="city" id="city-select">
-    			<option value="январь">январь</option>
-    			<option value="февраль">февраль</option>
-    			<option value="март">март</option>
-    			<option value="апрель">апрель</option>
-    			<select name="year" id="year-select">
-    			<option value="1990">1990</option>
-    			<option value="1991">1991</option>
-    			<option value="1992">1992</option>
-    			<option value="1993">1993</option>
-  			</select>
-
+				<label for="city-select">Длина и ширина в сантиметрах</label><br>
+				<input type="number" id="number" name="number" placeholder="длина">
+				<input type="number" id="width" name="width" placeholder="ширина">
 
 			</p>
 		<p>
-			<label for="city-select">Ваш город</label>
-  				<select name="city" id="city-select">
-    			<option value="">-- Выберите город --</option>
-    			<option value="petersburg">Санкт-Петербург</option>
-    			<option value="samara">Самара</option>
-    			<option value="perm">Пермь</option>
-    			<option value="novosibirsk">Новосибирск</option>
+			<label for="tecno-select">Стиль джинс:</label><br>
+  				<select name="tecno" id="tecno-select">
+    			<option value="HTML">Обычные</option>
+    			<option value="CSS">Рваные</option>
+    			<option value="JavaScript">Прямые джинсы</option>
+    			<option value="Node.js">Расклешенные джинсы</option>
+    			<option value="jinsi">Джинсы скинни</option>
+    			<option value="jeans">Джинсы палаццо</option>
+    			<option value="jeansi">Джинсы мом</option>
+    			<option value="jeansy">Джинсы-бойфренды</option>
   			</select>
   		</p>
+  			<p>
+  			<label for="color">Цвет:</label>
+  				<input type="color" id='color' name='color'><br>
+  				<label for="text-place">Место цвета:</label><br>
+  					<select name="place" id="text-place">
+  						<option value="first-place">Все джинсы полностью</option>
+    					<option value="first-place">Перед левой штанины</option>
+    					<option value="first-place">Зад левой штанины</option>
+    					<option value="first-place">Перед правой штанины</option>
+    					<option value="first-place">Зад правой штанины</option>
+    					<option value="first-place">Левый передний карман </option>
+    					<option value="first-place">Правый передний карман</option>
+    					<option value="first-place">Левый задний карман</option>
+    					<option value="first-place">Правый задний карман</option>
+    			</select>
+  			</p>
+  			<p>
+  		<label for="text">Текст на джинсах:</label>
+  				<input type="text" id='text' name='text'><br>
+
+  					<label for="text-place">Место текста:</label><br>
+  					<select name="place" id="text-place">
+    					<option value="first-place">Перед левой штанины</option>
+    					<option value="first-place">Зад левой штанины</option>
+    					<option value="first-place">Перед правой штанины</option>
+    					<option value="first-place">Зад правой штанины</option>
+    					<option value="first-place">Левый передний карман </option>
+    					<option value="first-place">Правый передний карман</option>
+    					<option value="first-place">Левый задний карман</option>
+    					<option value="first-place">Правый задний карман</option>
+    			</select>
+    		</p>
+    		<p>
+    			<label for="stejki">Длина стежков в сантиметрах</label><br>
+				<input type="number" id="stejki" name="stejki" placeholder="длина">
+    		</p>
+    		<p>
+    		<label for="checkbox">Потёртости</label>
+    			<input type="checkbox" id="used" name="used">
+    		</p>
+    		<p>
+    		<label for="check">Лямки</label>
+    			<input type="checkbox" id="liamki" name="liamki">
+    		</p>
+    		<p>
+    		<label for="photo">Ваш макет</label>
+    			<input type="file" id="photo" name="photo">
+    		</p>
+  		<input type="submit" value="Сохранить">
 	</form>	
 </body>
 
