@@ -2,6 +2,7 @@
 
 .page-container{
   max-width: 1440px;
+  max-height: 1823px;
   margin: 0 auto;
   display: grid;
   grid-template-areas: 
@@ -158,4 +159,68 @@ margin: 17px 240px 0px 240px;
 .sidebar_space{
   width: 62px;
   display: inline-block;
+}
+
+.sidebar_right_first{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.obyavlenia{
+  margin: 0;
+  padding: 43px 100px 26px 100px;
+}
+
+.losten-dog{
+  margin: 0;
+  padding: 0px 36px 5px 39px;
+}
+
+.second-right-text{
+  margin: 0;
+  padding: 65px 31px 40px 60px;
+  color: #fff;
+}
+
+.sidebar_right_second{
+  font-family: Oswald;
+font-size: 32px;
+font-weight: 400;
+}
+
+.second-read-more{
+    margin: 50px 124px 319px 60px;
+    color: #fff;
+}
+
+.footer{
+  width: 1440px;
+  height: 300px;
+  background: #828282;
+}
+
+.about-us{
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.contacs{
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 31px 62px 98px 30px;
+}
+.look-work{
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 31px 78px 98px 62px;
 }
