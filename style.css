@@ -214,7 +214,8 @@ font-weight: 400;
   font-weight: 400;
   color: #FFFFFF;
   text-align: left;
-  margin: 31px 62px 98px 30px;
+  margin: 31px 31px 98px 30px;
+  display: inline-block;
 }
 .look-work{
   font-family: Oswald;
@@ -222,5 +223,15 @@ font-weight: 400;
   font-weight: 400;
   color: #FFFFFF;
   text-align: center;
-  margin: 31px 78px 98px 62px;
+  margin: 31px 39px 98px 0px;
+  display: inline-block;
+}
+
+.adres{
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: right;
+  display: inline-block;
 }
