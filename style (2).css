@@ -1,32 +1,139 @@
+
+
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a a a a a a" 
+    "b b c c d d"
+    "e f g h i j"
+    "l l l l l l";
+    font-size: 15px;
 }
+.container > *{
+    height: 150px;
+}
+.test-1{
+    grid-area: a;
+    background-color: aqua;
 
-.item:nth-child(1){
-    background-color: red;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
+.test-2{
+   grid-area: b;
+   background-color: greenyellow; 
 
-.item:nth-child(2){
-    background-color: green;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
-.item:nth-child(3){
-    background-color: blue;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.item:nth-child(4){
-    background-color: yellow;
+.test-3{
+    grid-area: c;
+    background-color: cadetblue;
     
+}
+.test-4{
+    grid-area: d;
+    background-color: coral;
+ 
+}
+.test-5{
+    grid-area: e;
+    background-color: burlywood;
+
+}
+.test-6{
+    grid-area: f;
+    background-color: antiquewhite;
+
+}
+.test-7{
+    grid-area: g;
+    background-color: cornflowerblue;
+
+}
+.test-8{
+    grid-area: h;
+    background-color: darksalmon;
+ 
+}
+.test-9{
+    grid-area: i;
+    background-color: darkcyan;
+
+}
+.test-10{
+    grid-area: j;
+    background-color: darkkhaki;
+
+}
+.test-11{
+    grid-area: l;
+    background-color: hotpink;
+
+}
+
+@media (max-width: 600px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "a a a a a a" 
+        "b b c c d d"
+        "e f g h i j"
+        "l l l l l l";
+        font-size: 15px;
+    }
+    .container > *{
+        height: 150px;
+    }
+    .test-1{
+        grid-area: a;
+        background-color: aqua;
+    
+    }
+    .test-2{
+       grid-area: b;
+       background-color: greenyellow; 
+    
+    }
+    .test-3{
+        grid-area: c;
+        background-color: cadetblue;
+        
+    }
+    .test-4{
+        grid-area: d;
+        background-color: coral;
+     
+    }
+    .test-5{
+        grid-area: e;
+        background-color: burlywood;
+    
+    }
+    .test-6{
+        grid-area: f;
+        background-color: antiquewhite;
+    
+    }
+    .test-7{
+        grid-area: g;
+        background-color: cornflowerblue;
+    
+    }
+    .test-8{
+        grid-area: h;
+        background-color: darksalmon;
+     
+    }
+    .test-9{
+        grid-area: i;
+        background-color: darkcyan;
+    
+    }
+    .test-10{
+        grid-area: j;
+        background-color: darkkhaki;
+    
+    }
+    .test-11{
+        grid-area: l;
+        background-color: hotpink;
+    
+    }
 }
