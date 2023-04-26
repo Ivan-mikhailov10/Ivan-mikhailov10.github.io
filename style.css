@@ -1,4 +1,6 @@
-
+body{
+  margin: 0;
+}
 
 .page-container{
   max-width: 1440px;
@@ -38,19 +40,20 @@
 
 .sidebar_left_first{
   grid-area: sidebar_left;
-  grid-column: 1;
   background-color: #A4A0A0;
   font-family: Oswald;
   font-size: 32px;
   font-weight: 400;
+ 
+}
 
+.sidebar_left{
 
-  
+grid-area: sidebar_left;
 }
 
 main{
   grid-area: main;
-  grid-column: 2 / 4;
   background-color: #D9D9D9;
 
 
@@ -58,7 +61,7 @@ main{
 
 .sidebar_right_first{
   grid-area: sidebar_right;
-  grid-column: 4;
+
   width: 345px;
   background-color: #A4A0A0;
 }
@@ -110,7 +113,9 @@ img{
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;}
+  font-size: 32px;
+
+}
   
 
 .sidebar_right_second{
@@ -141,7 +146,10 @@ img{
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
-margin: 17px 240px 0px 240px;
+text-align: center;
+}
+.main-img{
+
 }
 
 .spisok{
@@ -189,44 +197,46 @@ font-weight: 400;
 }
 
 .footer{
-
   background: #828282;
 }
 
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .about-us{
-  font-family: Oswald;
-  font-size: 36px;
-  font-weight: 400;
+  text-align: center;
   color: #FFFFFF;
 }
 
 .contacs{
-  font-family: Oswald;
-  font-size: 32px;
-  font-weight: 400;
-  color: #FFFFFF;
+
   text-align: left;
-  margin: 31px 31px 98px 30px;
-  display: inline-block;
 }
+
 .look-work{
-  font-family: Oswald;
-  font-size: 32px;
-  font-weight: 400;
-  color: #FFFFFF;
+  
   text-align: center;
-  margin: 31px 39px 98px 0px;
-  display: inline-block;
 }
 
 .adres{
+ 
+  text-align: right;
+}
+
+.footer-item{
   font-family: Oswald;
   font-size: 32px;
   font-weight: 400;
   color: #FFFFFF;
-  text-align: right;
-  display: inline-block;
 }
+
+.footer-link{
+  color: #FFFFFF;
+}
+
  @media (min-width: 360px) and (max-width: 760){
   .page-container{
   grid-template-areas: 
@@ -280,7 +290,6 @@ font-weight: 400;
   .sidebar_right:nth-child(2){
     grid-area: sidebar_right;
     grid-column: 4;
-    width: 345px;
     background-color: #A4A0A0;
   }
   
@@ -332,7 +341,7 @@ font-weight: 400;
     font-family: Oswald;
     font-size: 15px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   
   .contacs{
