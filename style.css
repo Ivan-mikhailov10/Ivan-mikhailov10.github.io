@@ -1,10 +1,19 @@
+html{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   margin: 0;
 }
 
 .page-container{
-  max-width: 1440px;
-  max-height: 1823px;
   margin: 0 auto;
   display: grid;
   grid-template-areas: 
@@ -12,6 +21,7 @@ body{
   "sidebar_left main main sidebar_right"
   "footer footer footer footer"
   ;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .header{
@@ -31,20 +41,17 @@ body{
   align-items: center;
   font-family: 'Oswald', sans-serif;
   color: #fff;
-  font-size: 36px;
+  font-size: 1.5rem;
   padding: 45px 0;
   margin: 0;
   grid-row: 2;
-  margin: 0 20px;
 }
 
 .sidebar_left_first{
-  grid-area: sidebar_left;
   background-color: #A4A0A0;
   font-family: Oswald;
-  font-size: 32px;
+  font-size: 1rem;
   font-weight: 400;
- 
 }
 
 .sidebar_left{
@@ -60,8 +67,7 @@ main{
 }
 
 .sidebar_right_first{
-  grid-area: sidebar_right;
-
+  padding: 20px;
   width: 345px;
   background-color: #A4A0A0;
 }
@@ -81,28 +87,25 @@ footer{
 
 .header_button{
   font-family: Oswald;
-  font-size: 32px;
+  font-size: 1rem;
   font-weight: 400;
   background: #D9D9D9;
   border-radius: 10px;
   border: 0;
 }
 
-img{
 
-  margin: 0 20px;
-}
 
 .main-title{
   font-family: Oswald;
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: 400;
   margin: 0 260px;
 }
 
 .main-text{
   font-family: Oswald;
-  font-size: 24px;
+  font-size: 0.8rem;
   font-weight: 400;
   margin: 30px 20px;
 }
@@ -110,30 +113,28 @@ img{
 .sidebar_left_second{
 
   background-color: #8B8B8B;
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
+
 
 }
   
 
 .sidebar_right_second{
-  
+  padding: 20px;
   background-color: #8B8B8B;
 }
 
 .sidebar *{
   margin: 0;
+
 }
 
 .second-text{
   margin: 0;
-  padding: 64px 51px 0px 51px;
+  padding: 20px;
   color: #fff;
 }
 .read-more{
-  margin: 0px 129px 320px 55px;
+  padding: 20px;
   color: #fff;
 }
 .news-weather{
@@ -145,11 +146,12 @@ img{
   font-family: 'Oswald';
 font-style: normal;
 font-weight: 400;
-font-size: 36px;
+font-size: 1.5rem;
 text-align: center;
 }
 .main-img{
-
+  max-width: 100%;
+  height: auto;
 }
 
 .spisok{
@@ -158,42 +160,32 @@ text-align: center;
   margin: 0;
 }
 .sidebar_space{
-
   display: inline-block;
+}
+
+.sidebar > * {
+  padding: 20px;
 }
 
 .sidebar_right_first{
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-}
-
-.obyavlenia{
-  margin: 0;
-  padding: 43px 100px 26px 100px;
-}
-
-.losten-dog{
-  margin: 0;
-  padding: 0px 36px 5px 39px;
-}
-
-.second-right-text{
-  margin: 0;
-  padding: 65px 31px 40px 60px;
-  color: #fff;
+  font-size: 1rem;
 }
 
 .sidebar_right_second{
   font-family: Oswald;
-font-size: 32px;
+font-size: 1rem;
 font-weight: 400;
 }
 
 .second-read-more{
-    margin: 50px 124px 319px 60px;
-    color: #fff;
+  color: #fff;
+}
+
+.second-right-text {
+  color: #fff;
 }
 
 .footer{
@@ -228,7 +220,7 @@ font-weight: 400;
 
 .footer-item{
   font-family: Oswald;
-  font-size: 32px;
+  font-size: 1rem;
   font-weight: 400;
   color: #FFFFFF;
 }
@@ -237,139 +229,6 @@ font-weight: 400;
   color: #FFFFFF;
 }
 
- @media (min-width: 360px) and (max-width: 760){
-  .page-container{
-  grid-template-areas: 
-  "sidebar_left header header sidebar_right"
-  " main main main main"
-  "footer footer footer footer"
-  ;}
-  .header{
-    grid-area: header;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  
-  }
-  
-  .header-title{
-    grid-column: 2 / 4;
-    background-color: #8B8B8B;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
-    font-size: 15px;
-    padding: 45px 0;
-    margin: 0;
-    grid-row: 2;
-    margin: 0 20px;
-  }
-  
-  .sidebar_left:nth-child(2){
-    grid-area: sidebar_left;
-    grid-column: 1;
-    background-color: #A4A0A0;
-    font-family: Oswald;
-    font-size: 12px;
-    font-weight: 400;
-  
-  
-    
-  }
-  
-  main{
-    grid-area: main;
-    grid-column: 0 / -1;
-    background-color: #D9D9D9;
-  
-  
-  }
-  
-  .sidebar_right:nth-child(2){
-    grid-area: sidebar_right;
-    grid-column: 4;
-    background-color: #A4A0A0;
-  }
-  
-  footer{
-    grid-area: footer;
-   
-  }
-  
-
-  
-  img{
-  
-    margin: 0 20px;
-  }
-  
-  .main-title{
-    font-family: Oswald;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 0 260px;
-  }
-  
-  .main-text{
-    font-family: Oswald;
-    font-size: 13px;
-    font-weight: 400;
-    margin: 30px 20px;
-  }
-  
-  .sidebar *{
-    margin: 0;
-  }
-  
- 
-  .main-news{
-    font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  margin: 17px 240px 0px 240px;
-  }
-  
-  .footer{
-  
-    background: #828282;
-  }
-  
-  .about-us{
-    font-family: Oswald;
-    font-size: 15px;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  
-  .contacs{
-    font-family: Oswald;
-    font-size: 12px;
-    font-weight: 400;
-    color: #FFFFFF;
-    text-align: left;
-    margin: 31px 31px 98px 30px;
-    display: inline-block;
-  }
-  .look-work{
-    font-family: Oswald;
-    font-size: 12px;
-    font-weight: 400;
-    color: #FFFFFF;
-    text-align: center;
-    margin: 31px 39px 98px 0px;
-    display: inline-block;
-  }
-  
-  .adres{
-    font-family: Oswald;
-    font-size: 12px;
-    font-weight: 400;
-    color: #FFFFFF;
-    text-align: right;
-    display: inline-block;
-  
- }
+footer{
+  padding: 20px;
 }
