@@ -7,6 +7,7 @@ html{
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -28,23 +29,22 @@ body{
   grid-area: header;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 96px 133px 148px;
-
 }
 
 .header-title{
   grid-column: 2 / 4;
   background-color: #8B8B8B;
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Oswald', sans-serif;
   color: #fff;
   font-size: 1.5rem;
-  padding: 45px 0;
+  padding: 20px 0;
   margin: 0;
-  grid-row: 2;
+  text-align: center;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar_left_first{
@@ -52,6 +52,7 @@ body{
   font-family: Oswald;
   font-size: 1rem;
   font-weight: 400;
+  padding: 20px;
 }
 
 .sidebar_left{
@@ -62,14 +63,20 @@ grid-area: sidebar_left;
 main{
   grid-area: main;
   background-color: #D9D9D9;
+  padding: 20px;
+}
 
-
+.main h2{
+  margin-bottom: 15px;
 }
 
 .sidebar_right_first{
   padding: 20px;
-  width: 345px;
   background-color: #A4A0A0;
+}
+
+.sidebar_right {
+  grid-area: sidebar_right;
 }
 
 footer{
@@ -94,7 +101,11 @@ footer{
   border: 0;
 }
 
-
+.sidebar h2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
 
 .main-title{
   font-family: Oswald;
@@ -113,10 +124,11 @@ footer{
 .sidebar_left_second{
 
   background-color: #8B8B8B;
-
-
 }
   
+.img-container{
+  margin-bottom: 15px;
+}
 
 .sidebar_right_second{
   padding: 20px;
@@ -125,12 +137,16 @@ footer{
 
 .sidebar *{
   margin: 0;
+}
 
+.sidebar > *{
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .second-text{
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
 }
 .read-more{
@@ -139,7 +155,7 @@ footer{
 }
 .news-weather{
   margin: 0;
-  padding:  43px 91px 0px 73px;
+
 
 }
 .main-news{
@@ -149,17 +165,15 @@ font-weight: 400;
 font-size: 1.5rem;
 text-align: center;
 }
-.main-img{
+.main-img {
   max-width: 100%;
   height: auto;
 }
 
-.spisok{
+.spisok {
   list-style-type:none;
-  padding: 0px 0px 0px 48px;
-  margin: 0;
 }
-.sidebar_space{
+.sidebar_space {
   display: inline-block;
 }
 
@@ -167,14 +181,14 @@ text-align: center;
   padding: 20px;
 }
 
-.sidebar_right_first{
+.sidebar_right_first {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
 }
 
-.sidebar_right_second{
+.sidebar_right_second {
   font-family: Oswald;
 font-size: 1rem;
 font-weight: 400;
