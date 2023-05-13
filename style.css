@@ -10,10 +10,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
 .page-container {
   margin: 0 auto;
   display: grid;
@@ -39,13 +35,13 @@ body {
   border-radius: 10px;
   color: #fff;
   font-size: 2.5rem;
-  margin: 0;
   text-align: center;
+  margin: 0;
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .sidebar_left_first {
@@ -115,16 +111,12 @@ footer {
   margin: 0 260px;
 }
 
-.main-text {
-  font-family: Oswald;
-  font-size: 0.8rem;
-  font-weight: 400;
-  margin: 30px 20px;
+.sidebar_left_second {
+  background-color: #595959;
 }
 
-.sidebar_left_second {
-
-  background-color: #595959;
+.main-text {
+  margin-bottom: 15px;
 }
   
 .img-container {
@@ -136,27 +128,13 @@ footer {
   background-color: #595959;
 }
 
-.sidebar *{
-  margin: 0;
-}
-
-.sidebar > *{
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
 .second-text {
-  margin: 0;
   color: #fff;
   margin-bottom: 15px;
 }
 
 .read-more {
   color: #fff;
-}
-
-.news-weather {
-  margin: 0;
 }
 
 .main-news {
@@ -167,9 +145,23 @@ font-size: 1.5rem;
 text-align: center;
 }
 
-.main-img {
+.img--responsive {
   max-width: 100%;
   height: auto;
+}
+
+.second_main_news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.article-p {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .spisok {
@@ -196,24 +188,12 @@ text-align: center;
   font-weight: 400;
 }
 
-.cat-img {
-  max-width: 57%;
-  height: auto;
-  padding: 10px 0 0 0;
-}
-
-.cat-link {
+.sidebar-link {
   color: #000000;
 }
 
-.ads-img {
-  max-width: 57%;
-  height: auto;
-  padding: 10px 0 0 0;
-}
-
-.ads-link {
-  color: #000000;
+.p-ads {
+  margin-bottom: 15px;
 }
 
 .second-right-text {
