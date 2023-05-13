@@ -203,7 +203,17 @@ text-align: center;
 }
 
 .cat-link {
-  color: #fff;
+  color: #000000;
+}
+
+.ads-img {
+  max-width: 57%;
+  height: auto;
+  padding: 10px 0 0 0;
+}
+
+.ads-link {
+  color: #000000;
 }
 
 .second-right-text {
