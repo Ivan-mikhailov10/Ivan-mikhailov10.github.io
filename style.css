@@ -216,8 +216,9 @@ text-align: center;
 
 .footer-container {
   display: grid; 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   gap: 20px;
+  align-items: center;
 }
 
 .about-us {
@@ -250,6 +251,7 @@ text-align: center;
 
 footer {
   padding: 20px;
+  color: #FFFFFF;
 }
 
 .social-img {
